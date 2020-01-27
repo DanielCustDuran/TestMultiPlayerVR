@@ -32,5 +32,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("On joined room");
         PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-4,4), -0.01131959f, -1), Quaternion.identity);
+
+        Debug.Log("Numero de jugadores " + PhotonNetwork.PlayerList.Length.ToString());
     }
 }
