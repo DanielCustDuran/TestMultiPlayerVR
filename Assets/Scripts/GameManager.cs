@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public override void OnConnectedToMaster()
@@ -25,14 +25,16 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions {MaxPlayers=3}, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("R00m", new RoomOptions { MaxPlayers = 3 }, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
     {
         Debug.Log("On joined room");
-        PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-4,4), -0.01131959f, -1), Quaternion.identity);
-
-        Debug.Log("Numero de jugadores " + PhotonNetwork.PlayerList.Length.ToString());
+        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-4, 4), 1, Random.Range(-4, 4)), Quaternion.identity);
+        //Transform holderCamera = capsule.transform.Find("HoldingCamera").transform;
+        player.transform.Find("Main Camera").gameObject.GetComponent<Camera>().enabled = true;
+        //capsule.AddComponent<Camera>();
+        //camera.transform.position = holderCamera.position;
     }
 }

@@ -6,7 +6,7 @@ using Leap.Unity;
 
 public class PlayerNetworking : MonoBehaviour
 {
-    public LeapXRServiceProvider[] scriptsToIgnore;
+    public MonoBehaviour[] scriptsToIgnore;
     private PhotonView photonView;
 
     // Start is called before the first frame update
