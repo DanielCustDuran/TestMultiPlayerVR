@@ -4,13 +4,9 @@ using UnityEngine;
 using Photon.Pun;
 public class PlayerController : MonoBehaviourPun, IPunObservable
 {
-    Renderer rend;
-    Color colorStart = Color.red;
-    Color colorEnd = Color.green;
-    float duration = 1.0f;
+    
     PhotonView _photonView;
     Vector3 inputMovement;
-    public Camera camera;
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
@@ -28,13 +24,7 @@ public class PlayerController : MonoBehaviourPun, IPunObservable
     void Start()
     {
         _photonView = GetComponent<PhotonView>();
-        rend = GetComponent<Renderer>();
-        float lerp = Mathf.PingPong(Time.time, duration) / duration;
-        rend.material.color = new Color(
-              Random.Range(0f, 1f),
-              Random.Range(0f, 1f),
-              Random.Range(0f, 1f)
-          );
+        
         
     }
 

@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("On joined room");
-        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-4, 4), 1, Random.Range(-4, 4)), Quaternion.identity);
+        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-5, 5), 3f, Random.Range(-5, 5)), Quaternion.identity);
         //Transform holderCamera = capsule.transform.Find("HoldingCamera").transform;
         player.transform.Find("Main Camera").gameObject.GetComponent<Camera>().enabled = true;
         //capsule.AddComponent<Camera>();

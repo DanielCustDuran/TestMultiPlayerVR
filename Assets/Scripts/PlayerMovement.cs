@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("dsadasdasas]");
         Vector3 inputMovement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.position += inputMovement.normalized * Time.deltaTime * 10.0f;
     }
