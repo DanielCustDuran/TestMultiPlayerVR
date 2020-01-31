@@ -10,6 +10,7 @@
 using UnityEngine;
 using System;
 using Leap.Unity.Attributes;
+using Photon;
 
 namespace Leap.Unity {
 
