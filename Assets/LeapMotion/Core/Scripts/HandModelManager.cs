@@ -17,7 +17,7 @@ using Leap.Unity.Attributes;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-
+using Photon.Pun;
 namespace Leap.Unity {
 
   /// <summary>
@@ -29,7 +29,8 @@ namespace Leap.Unity {
   /// 
   /// This class was formerly known as HandPool.
   /// </summary>
-  public class HandModelManager : MonoBehaviour {
+  public class HandModelManager : MonoBehaviour, IPunObservable
+    {
     
     #region Formerly in LeapHandController
 
@@ -39,6 +40,7 @@ namespace Leap.Unity {
     protected bool graphicsEnabled = true;
     protected bool physicsEnabled = true;
 
+        protected PhotonView photonView;
     public bool GraphicsEnabled {
       get {
         return graphicsEnabled;
@@ -60,14 +62,22 @@ namespace Leap.Unity {
     /** Updates the graphics HandRepresentations. */
     protected virtual void OnUpdateFrame(Frame frame) {
       if (frame != null && graphicsEnabled) {
+                if (photonView.IsMine)
+                {
         UpdateHandRepresentations(graphicsHandReps, ModelType.Graphics, frame);
+
+                }
       }
     }
 
     /** Updates the physics HandRepresentations. */
     protected virtual void OnFixedFrame(Frame frame) {
       if (frame != null && physicsEnabled) {
+                if (photonView.IsMine)
+                {
         UpdateHandRepresentations(physicsHandReps, ModelType.Physics, frame);
+
+                }
       }
     }
 
@@ -311,6 +321,7 @@ namespace Leap.Unity {
 
     /** Popuates the ModelPool with the contents of the ModelCollection */
     void Start() {
+            photonView = GetComponent<PhotonView>();
       for(int i=0; i<ModelPool.Count; i++) {
         InitializeModelGroup(ModelPool[i]);
       }
@@ -494,10 +505,15 @@ namespace Leap.Unity {
       }
     }
 
-    #endif
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        throw new NotImplementedException();
+    }
 
-    #endregion
+#endif
 
-  }
+        #endregion
+
+    }
 }
 
