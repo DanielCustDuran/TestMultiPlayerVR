@@ -62,22 +62,14 @@ namespace Leap.Unity {
     /** Updates the graphics HandRepresentations. */
     protected virtual void OnUpdateFrame(Frame frame) {
       if (frame != null && graphicsEnabled) {
-                if (photonView.IsMine)
-                {
         UpdateHandRepresentations(graphicsHandReps, ModelType.Graphics, frame);
-
-                }
       }
     }
 
     /** Updates the physics HandRepresentations. */
     protected virtual void OnFixedFrame(Frame frame) {
       if (frame != null && physicsEnabled) {
-                if (photonView.IsMine)
-                {
         UpdateHandRepresentations(physicsHandReps, ModelType.Physics, frame);
-
-                }
       }
     }
 
