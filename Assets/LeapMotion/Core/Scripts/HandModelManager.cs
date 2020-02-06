@@ -29,7 +29,7 @@ namespace Leap.Unity {
   /// 
   /// This class was formerly known as HandPool.
   /// </summary>
-  public class HandModelManager : MonoBehaviour, IPunObservable
+  public class HandModelManager : MonoBehaviour
     {
     
     #region Formerly in LeapHandController
@@ -496,12 +496,6 @@ namespace Leap.Unity {
         return PrefabUtility.GetPrefabObject(model) != PrefabUtility.GetPrefabObject(this);
       }
     }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        throw new NotImplementedException();
-    }
-
 #endif
 
         #endregion
