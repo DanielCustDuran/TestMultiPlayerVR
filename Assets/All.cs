@@ -11,7 +11,7 @@ public class All : MonoBehaviour
     {
         foreach(var gO in GetComponentsInChildren<Transform>())
         {
-            Debug.Log("daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            Debug.Log("daaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             gO.gameObject.AddComponent<PhotonView>();
             gO.gameObject.AddComponent<PhotonTransformViewClassic>();
             gO.gameObject.GetComponent<PhotonView>().ObservedComponents.Add(gO.gameObject.GetComponent<PhotonTransformViewClassic>());
