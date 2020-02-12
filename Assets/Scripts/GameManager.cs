@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        PhotonNetwork.JoinOrCreateRoom("R00m", new RoomOptions { MaxPlayers = 3 }, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("broxiavillahermosa", new RoomOptions { MaxPlayers = 20 }, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()

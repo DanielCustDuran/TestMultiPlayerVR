@@ -92,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6267936605104870420}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb0e8dd6c809854f8fea5e0976884f8, type: 3}
   m_Name: 
@@ -158,7 +158,8 @@ GameObject:
   - component: {fileID: 6266352833914299946}
   - component: {fileID: 6299863166379585188}
   - component: {fileID: 7405772678776722046}
-  - component: {fileID: 7339953802265506000}
+  - component: {fileID: 129852444139719447}
+  - component: {fileID: 1923689872383084033}
   m_Layer: 0
   m_Name: LeapRightPlayer
   m_TagString: Untagged
@@ -218,14 +219,15 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 129852444139719447}
+  - {fileID: 1923689872383084033}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &7339953802265506000
+--- !u!114 &129852444139719447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,15 +236,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 6268113535626955684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126494ae2a10a34499272ed97a6c9f5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logLevel: 1
-  recorderInUse: {fileID: 0}
-  speakerInUse: {fileID: 0}
-  AutoCreateRecorderIfNotFound: 1
-  UsePrimaryRecorder: 1
-  SetupDebugSpeaker: 0
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
+--- !u!114 &1923689872383084033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268113535626955684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6268169458770851418
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,11 +415,6 @@ PrefabInstance:
     - target: {fileID: 2268028665692223301, guid: ffbcd9e80ed001d42a3f629598c3dfe1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2268028665692223300, guid: ffbcd9e80ed001d42a3f629598c3dfe1,
-        type: 3}
-      propertyPath: handedness
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

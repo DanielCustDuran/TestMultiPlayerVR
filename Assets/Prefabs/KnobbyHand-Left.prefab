@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4098657715009653450}
   - component: {fileID: 5190605831271759538}
   - component: {fileID: 2201241737103783795}
+  - component: {fileID: 6069348476955726648}
   m_Layer: 0
   m_Name: Arm
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2201241737103783795}
+  - {fileID: 6069348476955726648}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -88,6 +90,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6069348476955726648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629335148331003960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2268028665559177316
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +113,7 @@ GameObject:
   - component: {fileID: 2268028665559177317}
   - component: {fileID: 4007206759068947177}
   - component: {fileID: 4023376457784947993}
+  - component: {fileID: 2461741219721226812}
   m_Layer: 0
   m_Name: Palm
   m_TagString: Untagged
@@ -140,6 +155,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4023376457784947993}
+  - {fileID: 2461741219721226812}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -176,6 +192,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2461741219721226812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268028665559177316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2268028665692223323
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +216,7 @@ GameObject:
   - component: {fileID: 2268028665692223300}
   - component: {fileID: 4408795634496846428}
   - component: {fileID: 6861506521103654858}
+  - component: {fileID: 6640201225657718588}
   m_Layer: 0
   m_Name: KnobbyHand-Left
   m_TagString: Untagged
@@ -229,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fbdb78d894664a6cb7ab118080ae01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handedness: 1
+  handedness: 0
   handModelPalmWidth: 0.085
   fingers:
   - {fileID: 4667302969174776578}
@@ -260,6 +289,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 6861506521103654858}
+  - {fileID: 6640201225657718588}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -276,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PositionModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     TeleportEnabled: 1
     TeleportIfDistanceGreaterThan: 3
     InterpolateOption: 2
@@ -287,15 +317,27 @@ MonoBehaviour:
     ExtrapolateIncludingRoundTripTime: 1
     ExtrapolateNumberOfStoredPositions: 1
   m_RotationModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6640201225657718588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268028665692223323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2268028665968122256
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +532,7 @@ GameObject:
   - component: {fileID: 2268028666372813527}
   - component: {fileID: 2840674329916646571}
   - component: {fileID: 3542713574112674345}
+  - component: {fileID: 3854535672313005305}
   m_Layer: 0
   m_Name: Wrist
   m_TagString: Untagged
@@ -531,6 +574,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 3542713574112674345}
+  - {fileID: 3854535672313005305}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -567,6 +611,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &3854535672313005305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268028666372813526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4506354851160984049
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +726,7 @@ GameObject:
   - component: {fileID: 4667302967321686276}
   - component: {fileID: 4858701497755059175}
   - component: {fileID: 1634158696633480962}
+  - component: {fileID: 363513447733843343}
   m_Layer: 0
   m_Name: Proximal
   m_TagString: Untagged
@@ -711,6 +768,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1634158696633480962}
+  - {fileID: 363513447733843343}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -747,6 +805,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &363513447733843343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967321686279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967338297510
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +905,7 @@ GameObject:
   - component: {fileID: 4667302967355646905}
   - component: {fileID: 1996450151514972093}
   - component: {fileID: 5651128989609983711}
+  - component: {fileID: 8301319478961238085}
   m_Layer: 0
   m_Name: Intermediate
   m_TagString: Untagged
@@ -876,6 +947,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 5651128989609983711}
+  - {fileID: 8301319478961238085}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -912,6 +984,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &8301319478961238085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967355646904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967371459126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1238,7 @@ GameObject:
   - component: {fileID: 4667302967454185306}
   - component: {fileID: 9212249304434762005}
   - component: {fileID: 1929172838344265451}
+  - component: {fileID: 451799662956860057}
   m_Layer: 0
   m_Name: ProximalinterphalangealJoint
   m_TagString: Untagged
@@ -1195,6 +1280,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1929172838344265451}
+  - {fileID: 451799662956860057}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1231,6 +1317,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &451799662956860057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967454185285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967480893532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1340,7 @@ GameObject:
   - component: {fileID: 4667302967480893533}
   - component: {fileID: 3073286752930801581}
   - component: {fileID: 5561830055603011347}
+  - component: {fileID: 7897796209179809528}
   m_Layer: 0
   m_Name: ProximalinterphalangealJoint
   m_TagString: Untagged
@@ -1283,6 +1382,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 5561830055603011347}
+  - {fileID: 7897796209179809528}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1319,6 +1419,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &7897796209179809528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967480893532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967621897222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1596,7 @@ GameObject:
   - component: {fileID: 4667302967648840063}
   - component: {fileID: 1304768546606564807}
   - component: {fileID: 4174741543885239796}
+  - component: {fileID: 2752454752846619478}
   m_Layer: 0
   m_Name: Metacarpal
   m_TagString: Untagged
@@ -1525,6 +1638,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4174741543885239796}
+  - {fileID: 2752454752846619478}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1561,6 +1675,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2752454752846619478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967648840062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967678695082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1852,7 @@ GameObject:
   - component: {fileID: 4667302967772568519}
   - component: {fileID: 5140203513874606512}
   - component: {fileID: 350202004401923487}
+  - component: {fileID: 5700797911463336035}
   m_Layer: 0
   m_Name: Distal
   m_TagString: Untagged
@@ -1767,6 +1894,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 350202004401923487}
+  - {fileID: 5700797911463336035}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1803,6 +1931,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &5700797911463336035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967772568518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302967774693225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,6 +2493,7 @@ GameObject:
   - component: {fileID: 4667302967909411735}
   - component: {fileID: 1405035983735524395}
   - component: {fileID: 2294698487340771329}
+  - component: {fileID: 6966708169008721536}
   m_Layer: 0
   m_Name: Proximal
   m_TagString: Untagged
@@ -2394,6 +2535,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2294698487340771329}
+  - {fileID: 6966708169008721536}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2430,6 +2572,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6966708169008721536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302967909411734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968000136379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2749,7 @@ GameObject:
   - component: {fileID: 4667302968033582755}
   - component: {fileID: 4092731667356298208}
   - component: {fileID: 4051641109806678241}
+  - component: {fileID: 6611073097199328025}
   m_Layer: 0
   m_Name: Distal
   m_TagString: Untagged
@@ -2636,6 +2791,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4051641109806678241}
+  - {fileID: 6611073097199328025}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2672,6 +2828,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6611073097199328025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968033582754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968095175687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2928,7 @@ GameObject:
   - component: {fileID: 4667302968099362085}
   - component: {fileID: 7594756166896486285}
   - component: {fileID: 4602497380130793452}
+  - component: {fileID: 3085008470030131795}
   m_Layer: 0
   m_Name: DistalinterphalangealJoint
   m_TagString: Untagged
@@ -2801,6 +2970,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4602497380130793452}
+  - {fileID: 3085008470030131795}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2837,6 +3007,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &3085008470030131795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968099362084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968099720549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,6 +3030,7 @@ GameObject:
   - component: {fileID: 4667302968099720570}
   - component: {fileID: 5253745461653700234}
   - component: {fileID: 1558480531645137323}
+  - component: {fileID: 1307360406465917713}
   m_Layer: 0
   m_Name: Metacarpal
   m_TagString: Untagged
@@ -2889,6 +3072,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1558480531645137323}
+  - {fileID: 1307360406465917713}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2925,6 +3109,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &1307360406465917713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968099720549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968118496369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3286,7 @@ GameObject:
   - component: {fileID: 4667302968190355000}
   - component: {fileID: 2452699831768364190}
   - component: {fileID: 1343321688511970477}
+  - component: {fileID: 7523521828524246730}
   m_Layer: 0
   m_Name: MetacarpophalangealJoint
   m_TagString: Untagged
@@ -3131,6 +3328,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1343321688511970477}
+  - {fileID: 7523521828524246730}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3167,6 +3365,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &7523521828524246730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968190355003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968215966541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,6 +3388,7 @@ GameObject:
   - component: {fileID: 4667302968215966530}
   - component: {fileID: 7630106177102649033}
   - component: {fileID: 1987900132409705258}
+  - component: {fileID: 4236339208558758722}
   m_Layer: 0
   m_Name: Proximal
   m_TagString: Untagged
@@ -3219,6 +3430,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1987900132409705258}
+  - {fileID: 4236339208558758722}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3255,6 +3467,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4236339208558758722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968215966541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968228178283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,6 +3567,7 @@ GameObject:
   - component: {fileID: 4667302968245804334}
   - component: {fileID: 461946940434416475}
   - component: {fileID: 3130630961478184065}
+  - component: {fileID: 2572568412941234673}
   m_Layer: 0
   m_Name: MetacarpophalangealJoint
   m_TagString: Untagged
@@ -3384,6 +3609,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 3130630961478184065}
+  - {fileID: 2572568412941234673}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3420,6 +3646,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2572568412941234673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968245804329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968246973893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,6 +3669,7 @@ GameObject:
   - component: {fileID: 4667302968246973914}
   - component: {fileID: 5152614177321926447}
   - component: {fileID: 8282202025666389492}
+  - component: {fileID: 6254104428930837927}
   m_Layer: 0
   m_Name: Proximal
   m_TagString: Untagged
@@ -3472,6 +3711,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8282202025666389492}
+  - {fileID: 6254104428930837927}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3508,6 +3748,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6254104428930837927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968246973893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968291911992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,6 +4002,7 @@ GameObject:
   - component: {fileID: 4667302968333945683}
   - component: {fileID: 4650664954781189382}
   - component: {fileID: 3188518312329921044}
+  - component: {fileID: 4912791186961155556}
   m_Layer: 0
   m_Name: Distal
   m_TagString: Untagged
@@ -3791,6 +4044,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 3188518312329921044}
+  - {fileID: 4912791186961155556}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3827,6 +4081,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4912791186961155556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968333945682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968353632109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4258,7 @@ GameObject:
   - component: {fileID: 4667302968440290728}
   - component: {fileID: 5923664580844347534}
   - component: {fileID: 4690816770133357941}
+  - component: {fileID: 588098974571141657}
   m_Layer: 0
   m_Name: Intermediate
   m_TagString: Untagged
@@ -4033,6 +4300,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4690816770133357941}
+  - {fileID: 588098974571141657}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4069,6 +4337,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &588098974571141657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968440290731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968447658690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4234,6 +4514,7 @@ GameObject:
   - component: {fileID: 4667302968525750397}
   - component: {fileID: 4973676661645722587}
   - component: {fileID: 5288641548945267850}
+  - component: {fileID: 6595081734389589465}
   m_Layer: 0
   m_Name: MetacarpophalangealJoint
   m_TagString: Untagged
@@ -4275,6 +4556,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 5288641548945267850}
+  - {fileID: 6595081734389589465}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4311,6 +4593,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6595081734389589465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968525750396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968546399454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,6 +4616,7 @@ GameObject:
   - component: {fileID: 4667302968546399455}
   - component: {fileID: 4232428395938326852}
   - component: {fileID: 7931491861228968847}
+  - component: {fileID: 3750641729950862281}
   m_Layer: 0
   m_Name: DistalinterphalangealJoint
   m_TagString: Untagged
@@ -4363,6 +4658,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 7931491861228968847}
+  - {fileID: 3750641729950862281}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4399,6 +4695,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &3750641729950862281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968546399454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968571396766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4796,7 @@ GameObject:
   - component: {fileID: 4667302968599827862}
   - component: {fileID: 943228681201391023}
   - component: {fileID: 6907728138289882146}
+  - component: {fileID: 886325452324492009}
   m_Layer: 0
   m_Name: KnobbyFingerRing
   m_TagString: Untagged
@@ -4557,6 +4866,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 6907728138289882146}
+  - {fileID: 886325452324492009}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4593,6 +4903,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &886325452324492009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968599827856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968605731418
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,6 +4926,7 @@ GameObject:
   - component: {fileID: 4667302968605731419}
   - component: {fileID: 7935045650626042571}
   - component: {fileID: 2820051809008640827}
+  - component: {fileID: 6317559859036227121}
   m_Layer: 0
   m_Name: Distal
   m_TagString: Untagged
@@ -4645,6 +4968,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2820051809008640827}
+  - {fileID: 6317559859036227121}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4681,6 +5005,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6317559859036227121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968605731418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968644707348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +5106,7 @@ GameObject:
   - component: {fileID: 4667302968715846453}
   - component: {fileID: 5825580397329172682}
   - component: {fileID: 5423656386910033237}
+  - component: {fileID: 2462313576115295912}
   m_Layer: 0
   m_Name: KnobbyFingerMiddle
   m_TagString: Untagged
@@ -4839,6 +5176,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 5423656386910033237}
+  - {fileID: 2462313576115295912}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4875,6 +5213,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2462313576115295912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968715846455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968736298156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,6 +5236,7 @@ GameObject:
   - component: {fileID: 4667302968736298157}
   - component: {fileID: 5583748172393708191}
   - component: {fileID: 1489963823860787315}
+  - component: {fileID: 4114222248963934460}
   m_Layer: 0
   m_Name: Metacarpal
   m_TagString: Untagged
@@ -4927,6 +5278,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1489963823860787315}
+  - {fileID: 4114222248963934460}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4963,6 +5315,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4114222248963934460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968736298156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968756987823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,6 +5338,7 @@ GameObject:
   - component: {fileID: 4667302968756987820}
   - component: {fileID: 4249631699762274581}
   - component: {fileID: 9130214086178593192}
+  - component: {fileID: 4241242654037849411}
   m_Layer: 0
   m_Name: Metacarpal
   m_TagString: Untagged
@@ -5015,6 +5380,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 9130214086178593192}
+  - {fileID: 4241242654037849411}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5051,6 +5417,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4241242654037849411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968756987823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968788980510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,6 +5518,7 @@ GameObject:
   - component: {fileID: 4667302968861634468}
   - component: {fileID: 7141229704063779729}
   - component: {fileID: 2672124553534408403}
+  - component: {fileID: 8952350804737455452}
   m_Layer: 0
   m_Name: KnobbyFingerIndex
   m_TagString: Untagged
@@ -5209,6 +5588,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2672124553534408403}
+  - {fileID: 8952350804737455452}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5225,7 +5605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PositionModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     TeleportEnabled: 1
     TeleportIfDistanceGreaterThan: 3
     InterpolateOption: 2
@@ -5236,15 +5616,27 @@ MonoBehaviour:
     ExtrapolateIncludingRoundTripTime: 1
     ExtrapolateNumberOfStoredPositions: 1
   m_RotationModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &8952350804737455452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968861634470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968862750758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,6 +5648,7 @@ GameObject:
   - component: {fileID: 4667302968862750759}
   - component: {fileID: 1067446510463785604}
   - component: {fileID: 6982061041174278443}
+  - component: {fileID: 785292821855777676}
   m_Layer: 0
   m_Name: Intermediate
   m_TagString: Untagged
@@ -5297,6 +5690,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 6982061041174278443}
+  - {fileID: 785292821855777676}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5333,6 +5727,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &785292821855777676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968862750758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968869680588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,6 +5750,7 @@ GameObject:
   - component: {fileID: 4667302968869680589}
   - component: {fileID: 6263304235796808432}
   - component: {fileID: 8738367647835463153}
+  - component: {fileID: 1916104964298421057}
   m_Layer: 0
   m_Name: ProximalinterphalangealJoint
   m_TagString: Untagged
@@ -5385,6 +5792,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8738367647835463153}
+  - {fileID: 1916104964298421057}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5421,6 +5829,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &1916104964298421057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968869680588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968891109984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5432,6 +5852,7 @@ GameObject:
   - component: {fileID: 4667302968891109985}
   - component: {fileID: 1407722708952417538}
   - component: {fileID: 6409841494227622295}
+  - component: {fileID: 2900775761736164103}
   m_Layer: 0
   m_Name: ProximalinterphalangealJoint
   m_TagString: Untagged
@@ -5473,6 +5894,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 6409841494227622295}
+  - {fileID: 2900775761736164103}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5509,6 +5931,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2900775761736164103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302968891109984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302968904768931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,6 +6107,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4667302969031727082}
   - component: {fileID: 4667302969031727083}
+  - component: {fileID: 6664759993736719090}
+  - component: {fileID: 1082608868690656450}
+  - component: {fileID: 2794416278429966680}
   m_Layer: 0
   m_Name: KnobbyFingerPinky
   m_TagString: Untagged
@@ -5723,6 +6160,74 @@ MonoBehaviour:
   - {fileID: 4667302969319824548}
   - {fileID: 4667302967480893533}
   - {fileID: 4667302969039658666}
+--- !u!114 &6664759993736719090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969031726997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1082608868690656450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969031726997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 2794416278429966680}
+  - {fileID: 6664759993736719090}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &2794416278429966680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969031726997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!1 &4667302969039658581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5734,6 +6239,7 @@ GameObject:
   - component: {fileID: 4667302969039658666}
   - component: {fileID: 2602117885376030930}
   - component: {fileID: 8423312705749250791}
+  - component: {fileID: 6241842437443898009}
   m_Layer: 0
   m_Name: DistalinterphalangealJoint
   m_TagString: Untagged
@@ -5775,6 +6281,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8423312705749250791}
+  - {fileID: 6241842437443898009}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5811,6 +6318,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6241842437443898009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969039658581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969085077602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,6 +6341,7 @@ GameObject:
   - component: {fileID: 4667302969085077603}
   - component: {fileID: 7581372240206536785}
   - component: {fileID: 8859061954083792660}
+  - component: {fileID: 4583965687264491549}
   m_Layer: 0
   m_Name: ProximalinterphalangealJoint
   m_TagString: Untagged
@@ -5863,6 +6383,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8859061954083792660}
+  - {fileID: 4583965687264491549}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5899,6 +6420,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4583965687264491549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969085077602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969116176184
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,6 +6443,7 @@ GameObject:
   - component: {fileID: 4667302969116176185}
   - component: {fileID: 377310602925576831}
   - component: {fileID: 3325261710110506686}
+  - component: {fileID: 1267349375305318777}
   m_Layer: 0
   m_Name: MetacarpophalangealJoint
   m_TagString: Untagged
@@ -5951,6 +6485,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 3325261710110506686}
+  - {fileID: 1267349375305318777}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5987,6 +6522,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &1267349375305318777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969116176184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969119927457
 GameObject:
   m_ObjectHideFlags: 0
@@ -6118,6 +6665,7 @@ GameObject:
   - component: {fileID: 4667302969174776578}
   - component: {fileID: 7851677162221882442}
   - component: {fileID: 2551170341920768596}
+  - component: {fileID: 7961709341715282587}
   m_Layer: 0
   m_Name: KnobbyFingerThumb
   m_TagString: Untagged
@@ -6187,6 +6735,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2551170341920768596}
+  - {fileID: 7961709341715282587}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6223,6 +6772,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &7961709341715282587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969174776588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969185655502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6234,6 +6795,7 @@ GameObject:
   - component: {fileID: 4667302969185655503}
   - component: {fileID: 1235037574918088695}
   - component: {fileID: 283157208939775697}
+  - component: {fileID: 4412576373866236800}
   m_Layer: 0
   m_Name: Proximal
   m_TagString: Untagged
@@ -6275,6 +6837,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 283157208939775697}
+  - {fileID: 4412576373866236800}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6311,6 +6874,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4412576373866236800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969185655502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969195130024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6399,6 +6974,7 @@ GameObject:
   - component: {fileID: 4667302969203156003}
   - component: {fileID: 7848807554238908921}
   - component: {fileID: 8565117003839487159}
+  - component: {fileID: 5179942184380275719}
   m_Layer: 0
   m_Name: Distal
   m_TagString: Untagged
@@ -6440,6 +7016,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8565117003839487159}
+  - {fileID: 5179942184380275719}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6476,6 +7053,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &5179942184380275719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969203156002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969204570652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,6 +7153,7 @@ GameObject:
   - component: {fileID: 4667302969277410473}
   - component: {fileID: 4398876098490622001}
   - component: {fileID: 8139215120782716995}
+  - component: {fileID: 3066632025693999747}
   m_Layer: 0
   m_Name: Intermediate
   m_TagString: Untagged
@@ -6605,6 +7195,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 8139215120782716995}
+  - {fileID: 3066632025693999747}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6641,6 +7232,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &3066632025693999747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969277410472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969316924250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,6 +7255,7 @@ GameObject:
   - component: {fileID: 4667302969316924251}
   - component: {fileID: 3152947502998079845}
   - component: {fileID: 4478375768073681814}
+  - component: {fileID: 5327454983614574787}
   m_Layer: 0
   m_Name: Intermediate
   m_TagString: Untagged
@@ -6693,6 +7297,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4478375768073681814}
+  - {fileID: 5327454983614574787}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6729,6 +7334,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &5327454983614574787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969316924250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969319824551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6740,6 +7357,7 @@ GameObject:
   - component: {fileID: 4667302969319824548}
   - component: {fileID: 7124025302481941231}
   - component: {fileID: 7876922634301080578}
+  - component: {fileID: 2983160222085997486}
   m_Layer: 0
   m_Name: MetacarpophalangealJoint
   m_TagString: Untagged
@@ -6781,6 +7399,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 7876922634301080578}
+  - {fileID: 2983160222085997486}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6817,6 +7436,18 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &2983160222085997486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969319824551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667302969402193008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6828,6 +7459,7 @@ GameObject:
   - component: {fileID: 4667302969402193009}
   - component: {fileID: 2342714477172745088}
   - component: {fileID: 7055356225111708569}
+  - component: {fileID: 6544649637880090771}
   m_Layer: 0
   m_Name: DistalinterphalangealJoint
   m_TagString: Untagged
@@ -6869,6 +7501,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 7055356225111708569}
+  - {fileID: 6544649637880090771}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6905,3 +7538,15 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &6544649637880090771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667302969402193008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f77f189d539049afb87b8b36adff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
